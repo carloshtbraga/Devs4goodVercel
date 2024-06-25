@@ -1,0 +1,133 @@
+.team .card {
+  width: 150px;
+  height: 170px;
+  margin-inline: 5px;
+}
+
+.team .card .photo {
+  width: 80%;
+  border-radius: 50%;
+  box-shadow: -4px 4px 8px rgba(19, 18, 18, 0.4);
+  background-color: var(--bg-claro);
+  border: 2px solid var(--bg-claro);
+  transition: 1s;
+}
+
+.team .card .photo:hover {
+  box-shadow: -5px 5px 10px rgba(19, 18, 18, 1);
+  background-color: var(--bg-claro);
+  border: 2px solid var(--bg-claro);
+  transition: 1s;
+}
+
+.team .card .name {
+  font-size: 1.1em;
+  text-shadow: 4px 4px 15px rgb(0, 0, 0);
+}
+
+.team .card .button-img {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.team .card .openDialogBtn {
+  width: 70px;
+  height: 26px;
+  cursor: pointer;
+  background-color: var(--bg-claro);
+  padding: 40px 0 17px;
+  border-radius: 10px;
+  /* border: 3px solid transparent; */
+  transition: all ease 0.5s;
+  font-size: 11px;
+  /* font-weight: 600; */
+  color: var(--letras-brancas);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -26px;
+  position: absolute;
+  z-index: -1;
+  outline: none;
+}
+
+.team .card dialog {
+  max-width: px;
+  margin: auto;
+  padding: 35px;
+  border-radius: 15px;
+  color: white;
+  background-color: var(--bg-claro);
+  box-shadow: 0px 0px 2px #8f16be;
+  outline: none;
+  overflow: hidden;
+  border: none;
+  font-size: 12px;
+}
+
+.team .card dialog h2 {
+  color: var(--tema-principal);
+  text-shadow: 0.5px 1px 2px #7925f8;
+}
+
+.team .card dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.team .card .dialog-container {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.team .card dialog .fa-xmark {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: var(--tema-principal);
+  text-shadow: 0.5px 1px 2px #7925f8;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.team .card dialog .fa-xmark:hover {
+  transform: scale(1.35);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.modalIco {
+  width: 40px;
+  margin: 10px;
+}
+
+.modalImg {
+  width: 270px;
+}
+
+@media screen and (min-width: 1024px) {
+  .team .card .photo {
+    width: 100%;
+  }
+
+  .team .card {
+    width: 180px;
+    height: 285px;
+    margin-inline: 20px;
+  }
+
+  .team .card .openDialogBtn {
+    bottom: 30px;
+  }
+
+  .team .card dialog {
+    max-width: 800px;
+    font-size: 16px;
+  }
+  .modalImg {
+    width: 360px;
+  }
+}

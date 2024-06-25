@@ -1,0 +1,86 @@
+.about {
+  background-color: var(--bg-escuro);
+}
+
+.about li, .about p, .about h3 {
+  margin-bottom: 14px;
+  color: var(--letras-brancas);
+  font-size: 0.95em;
+}
+
+.about-flex {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.astronaut-gif {
+  width: 95vw;
+  max-width: 420px;
+  transition: all ease 1s;
+  margin: auto;
+}
+
+.astronaut-gif:hover {
+  transform: perspective(300px) rotateY(180deg);
+  transition: 1s;
+}
+
+.about .text {
+  margin: auto;
+  padding: 10px;
+  min-width: 285px;
+  text-align: justify;
+}
+
+.about .title {
+  font-size: 17px;
+  color: var(--letras-brancas);
+}
+
+.forgood {
+  color: var(--tema-principal);
+  text-shadow: 0.5px 1px 4px #7925f8;
+}
+
+.about .about-list {
+  list-style: none;
+}
+
+.about .about-list i{
+  margin-right: 1px;
+  color: var(--tema-principal);
+  text-shadow: 0.5px 1px 4px #7925f8;
+  transition: transform 3s ease;
+}
+
+.about .about-list i:hover{
+  margin-right: 1px;
+  color: var(--tema-principal);
+  text-shadow: 0.5px 1px 4px #7925f8;
+  transform: rotate(360deg);
+}
+
+.form-section img {
+  width: 250px;
+  margin: auto;
+  transition: transform 15s ease;
+  /* margin-right: 30px; */
+}
+.form-section img:hover {
+  transform: rotate(360deg);
+}
+
+@media screen and (min-width: 1024px) {
+  .about-flex {
+    flex-direction: row;
+    width: 58%;
+    min-width: 1000px;
+    padding: 50px;
+  }
+
+  .astronaut-gif {
+    margin-right: 80px;
+  }
+}

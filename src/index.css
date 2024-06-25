@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --tema-principal: #9c5dfa;
+  --letras-brancas: rgb(255, 255, 255);
+  --bg-claro: rgb(60, 60, 60);
+  --bg-escuro: rgb(40, 40, 40);
+  --animate-delay: none;
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html {
+  background-color: var(--bg-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  background-color: rgb(55, 55, 55);
+  height: 15px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ebebeb;
+  border-radius: 5px;
+}
+
+.animate__animated {
+  opacity: 0;
+}

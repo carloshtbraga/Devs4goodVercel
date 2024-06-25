@@ -1,0 +1,11 @@
+.team {
+  background-color: var(--bg-escuro);
+}
+
+.team .cards {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

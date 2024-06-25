@@ -1,0 +1,33 @@
+.especialidades .card {
+  width: 350px;
+  padding: 15px;
+}
+
+.especialidades .card .icon {
+  font-size: 36px;
+}
+
+.especialidades .card .title {
+  font-size: 24px;
+}
+
+.especialidades .card .text {
+  font-size: 15px;
+}
+
+.especialidades .card .icon,
+.especialidades .card .title {
+  cursor: pointer;
+  transition: all ease 1s;
+}
+
+.especialidades .card:hover .icon {
+  transform: scale(1.4);
+  color: var(--tema-principal);
+  text-shadow: 0.5px 1px 2px #7925f8;
+}
+
+.especialidades .card:hover .title {
+  color: var(--tema-principal);
+  text-shadow: 0.5px 1px 2px #7925f8;
+}

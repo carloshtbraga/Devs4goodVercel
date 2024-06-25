@@ -1,0 +1,15 @@
+.especialidades {
+  background-color: var(--bg-claro);
+}
+
+.especialidades .cards {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* .title{
+  color: red;
+} */
